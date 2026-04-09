@@ -1,0 +1,148 @@
+import { StyleSheet } from 'react-native';
+import { COLORS } from '../../theme/colors';
+
+const CARD_GAP = 16;
+
+export const styles = StyleSheet.create({
+  safe: { flex: 1, backgroundColor: COLORS.background },
+  loader: { flex: 1, justifyContent: 'center', alignItems: 'center' },
+  title: {
+    fontSize: 24,
+    fontWeight: '800',
+    color: COLORS.text,
+    paddingHorizontal: CARD_GAP,
+    marginBottom: 16,
+  },
+  sectionTitle: {
+    fontSize: 17,
+    fontWeight: '700',
+    color: COLORS.text,
+    marginBottom: 10,
+  },
+  hotScroll: {
+    paddingHorizontal: CARD_GAP,
+    paddingBottom: 8,
+  },
+  dealCard: {
+    height: 200,
+    borderRadius: 16,
+    overflow: 'hidden',
+    marginRight: 12,
+  },
+  dealImage: {
+    ...StyleSheet.absoluteFillObject,
+    width: '100%',
+    height: '100%',
+  },
+
+  dealOff: {
+    fontSize: 20,
+    fontWeight: '800',
+    color: COLORS.primary,
+  },
+  dealDesc: {
+    fontSize: 13,
+    color: COLORS.textSecondary,
+    marginTop: 4,
+  },
+  dots: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    marginBottom: 20,
+  },
+  dot: {
+    width: 7,
+    height: 7,
+    borderRadius: 4,
+    backgroundColor: COLORS.dotInactive,
+    marginHorizontal: 3,
+  },
+  dotActive: { backgroundColor: COLORS.primary },
+  rowBetween: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingHorizontal: CARD_GAP,
+    marginBottom: 8,
+  },
+  viewAll: { color: COLORS.primary, fontWeight: '600', fontSize: 15 },
+  storeStrip: {
+    paddingHorizontal: CARD_GAP,
+    paddingBottom: 8,
+  },
+  storeCard: {
+    width: 200,
+    marginRight: 12,
+    backgroundColor: '#fff',
+    borderRadius: 16,
+    paddingBottom: 10,
+  },
+  storeImageWrap: {
+    borderTopLeftRadius: 16,
+    borderTopRightRadius: 16,
+    overflow: 'hidden',
+    height: 130,
+  },
+  storeImage: { width: '100%', height: '100%' },
+  viewStoreBtn: {
+    position: 'absolute',
+    right: 8,
+    bottom: 8,
+    backgroundColor: COLORS.primary,
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+    borderRadius: 20,
+  },
+  viewStoreText: { color: '#fff', fontSize: 12, fontWeight: '600' },
+  storeMetaRow: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    paddingHorizontal: 10,
+    paddingTop: 10,
+  },
+  storeName: { fontSize: 15, fontWeight: '700', color: COLORS.text },
+  storeCat: { fontSize: 12, color: COLORS.textMuted, marginTop: 2 },
+  periodBtn: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderRadius: 10,
+    paddingLeft: 14,
+    paddingRight: 6,
+    paddingVertical: 8,
+  },
+  periodBtnText: { color: COLORS.textMuted, fontWeight: '600', marginRight: 10,fontSize: 15 },
+  periodChevronBox: {
+    width: 28,
+    height: 28,
+    borderRadius: 10,
+    backgroundColor: COLORS.primary,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  periodMenu: {
+    position: 'absolute',
+    right: 0,
+    top: 44,
+    backgroundColor: COLORS.background,
+    borderRadius: 10,
+    minWidth: 140,
+    elevation: 6,
+    shadowColor: '#000',
+    shadowOpacity: 0.12,
+    shadowRadius: 12,
+    shadowOffset: { width: 0, height: 10 },
+    overflow: 'hidden',
+  },
+  periodItem: { paddingHorizontal: 16, paddingVertical: 12 },
+  periodItemActive: { backgroundColor: '#F3F7FF' },
+  periodItemText: { color: COLORS.text, fontSize: 16 },
+  periodItemTextActive: { color: COLORS.primary, fontWeight: '700' },
+  chartBox: {
+    alignItems: 'center',
+    paddingVertical: 16,
+    marginHorizontal: CARD_GAP,
+    backgroundColor: '#fff',
+    borderRadius: 16,
+  },
+});
+

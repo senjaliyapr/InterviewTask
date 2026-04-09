@@ -1,0 +1,96 @@
+import { StyleSheet } from 'react-native';
+import { COLORS } from '../../theme/colors';
+
+export const styles = StyleSheet.create({
+  safe: { flex: 1, backgroundColor: COLORS.background  },
+  header: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 16,
+    paddingTop: 8,
+    paddingBottom: 10,
+    backgroundColor: COLORS.background,
+  },
+  backBtn: {
+    width: 38,
+    height: 38,
+    borderRadius: 12,
+    backgroundColor: COLORS.background,
+    borderWidth: 1,
+    borderColor: COLORS.cardBorder,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  headerTitle: {
+    marginLeft: 12,
+    fontSize: 18,
+    fontWeight: '700',
+    color: COLORS.text,
+  },
+  centered: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F3F4F6',
+  },
+  scroll: { padding: 16, paddingBottom: 32 },
+  card: {
+    backgroundColor: COLORS.background,
+    borderRadius: 12,
+    padding: 14,
+    marginBottom: 14,
+    borderWidth: 1,
+    borderColor: '#A3A3A3',
+  },
+  cardDimmed: {
+    opacity: 0.48,
+  },
+  cardHeader: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    justifyContent: 'space-between',
+    gap: 12,
+  },
+  cardTitle: { fontSize: 15, fontWeight: '700', color: COLORS.text },
+  cardDesc: {
+    fontSize: 11,
+    color: COLORS.placeholder,
+    marginTop: 2,
+    lineHeight: 16,
+    maxWidth: '85%',
+  },
+  divider: {
+    height: 1,
+    backgroundColor: '#D1D5DB',
+    marginTop: 12,
+    marginBottom: 10,
+  },
+  channelsHeading: {
+    marginTop: 0,
+    fontSize: 12,
+    fontWeight: '600',
+    color: COLORS.textSecondary,
+  },
+  channelsRow: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    marginTop: 10,
+    gap: 22,
+  },
+  checkItem: { flexDirection: 'row', alignItems: 'center' },
+  checkDisabled: { opacity: 0.9 },
+  checkBox: {
+    width: 18,
+    height: 18,
+    borderRadius: 5,
+    borderWidth: 1.5,
+    borderColor: COLORS.primary,
+    marginRight: 8,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  checkBoxOn: { backgroundColor: COLORS.primary, borderColor: COLORS.primary },
+  checkLabel: { fontSize: 13, color: COLORS.textSecondary, fontWeight: '500' },
+  checkLabelDim: { color: COLORS.placeholder },
+});
+
