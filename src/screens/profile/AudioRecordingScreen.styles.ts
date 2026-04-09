@@ -101,7 +101,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   actionLabel: {
-    marginTop: 6,
+    marginBottom: 6,
     fontSize: 13,
     fontWeight: '600',
     color: COLORS.textSecondary,

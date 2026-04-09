@@ -334,14 +334,14 @@ export default function AudioRecordingScreen({ navigation }: Props) {
     mode === 'idle'
       ? 'New Recording'
       : mode === 'recording'
-        ? 'Recording…'
+        ? ''
         : mode === 'paused_record'
-          ? 'Paused'
+          ? ''
           : mode === 'ready'
-            ? 'Saved — tap play to listen'
+            ? ''
             : mode === 'playing'
-              ? 'Playing…'
-              : 'Playback paused';
+              ? ''
+              : '';
 
   return (
     <SafeAreaView style={styles.safe} edges={['top']}>
@@ -436,10 +436,10 @@ function ActionButton({
 }) {
   return (
     <TouchableOpacity style={styles.actionItem} onPress={onPress} disabled={disabled}>
-      <View style={styles.actionCircle}>
+            <Text style={styles.actionLabel}>{label}</Text>
+            <View style={styles.actionCircle}>
         <Ionicons name={icon} size={26} color="#fff" />
       </View>
-      <Text style={styles.actionLabel}>{label}</Text>
     </TouchableOpacity>
   );
 }
