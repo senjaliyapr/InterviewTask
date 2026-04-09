@@ -13,8 +13,8 @@ const EYE_OFF_ICON = require('../../../assets/icons/eye-off.png');
 
 export default function LoginScreen() {
   const dispatch = useAppDispatch();
-  const [username, setUsername] = useState('user1');
-  const [password, setPassword] = useState('password');
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
 
